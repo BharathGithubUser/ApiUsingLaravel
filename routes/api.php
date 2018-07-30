@@ -19,5 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('/v1/login','LoginApiController@processLogin');
 Route::post('/v1/signup','SignupApiController@processSignup');
-  Route::post('/v1/image_upload','ImageUploadController@index');
+Route::post('/v1/image_upload','ImageUploadController@index');
 Route::resource('/v1/getSampleData','StaticDataApiController');
